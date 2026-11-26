@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/User/Desktop/About%20Me/JustMe.html#about -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JustMe ♡</title>
+
+<link href="./JustMe ♡_files/css2" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --pink: #edb9d0;
+  --purple: #c9b5e8;
+  --cream: #fff9f6;
+  --text: #625367;
+  --white: #ffffff;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  position: sticky;
+  top: 0;
+  background: rgba(255,249,246,.93);
+  backdrop-filter: blur(12px);
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  color: #997ec1;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+nav a:hover {
+  color: #c17eaa;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background:
+    radial-gradient(circle at 20% 30%, #f8dce9, transparent 35%),
+    radial-gradient(circle at 80% 70%, #e6dafa, transparent 35%);
+}
+
+.hero small {
+  letter-spacing: 4px;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(65px, 12vw, 110px);
+  color: #bd86b0;
+}
+
+.hero h1 span {
+  font-style: italic;
+  color: #a999d2;
+}
+
+.hero p {
+  margin-top: 18px;
+  max-width: 430px;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px 28px;
+  border-radius: 30px;
+  background: #9ab1f8;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  background: #9dc3fc;
+}
+
+section {
+  padding: 90px 9%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title small {
+  color: #a2c5f5;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+.section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 39px;
+  margin-top: 10px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.profile {
+  background: #f1dfeb;
+  border-radius: 25px;
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 85px;
+}
+
+.about-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 27px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #c6a9ba18;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card .emoji {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.favorites {
+  background: #f8edf3;
+}
+
+.favorite-item {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.favorite-item span {
+  font-size: 30px;
+}
+
+.favorite-item h3 {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.favorite-item p {
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.dreams {
+  text-align: center;
+  background: linear-gradient(135deg,#f5e2ed,#ece4fa);
+}
+
+.dreams h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+}
+
+.dreams p {
+  max-width: 480px;
+  margin: 20px auto;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.quote {
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.quote h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.quote p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+footer {
+  background: #ebd9e9;
+  text-align: center;
+  padding: 30px;
+  font-size: 12px;
+}
+
+@media(max-width:750px) {
+  nav {
+    padding: 18px 5%;
+  }
+
+  nav a {
+    margin-left: 9px;
+    font-size: 10px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 65px 7%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">JustMe ♡</div>
+  <div>
+    <a href="file:///C:/Users/User/Desktop/About%20Me/JustMe.html#home">Home</a>
+    <a href="file:///C:/Users/User/Desktop/About%20Me/JustMe.html#about">About</a>
+    <a href="file:///C:/Users/User/Desktop/About%20Me/JustMe.html#favorites">Favorites</a>
+    <a href="file:///C:/Users/User/Desktop/About%20Me/JustMe.html#dreams">Dreams</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+  <small>✦ A LITTLE WEBSITE ABOUT ME ✦</small>
+  <h1>Just <span>Me.</span></h1>
+  <p>
+    Welcome to my little world!
+    A place where you can get to know me,
+    my stories, my favorites, and everything
+    that makes me who I am.
+  </p>
+  <a href="file:///C:/Users/User/Desktop/About%20Me/JustMe.html#about" class="btn">Explore my world ♡</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-title">
+    <small>GET TO KNOW ME</small>
+    <h2>About Me ♡</h2>
+  </div>
+
+  <div class="about">
+    <div class="profile">🐰</div>
+
+    <div class="about-text">
+      <h3>Hi, I'm [Faya]!</h3>
+      <p>
+        Hello! I'm a person with lots of little
+        dreams, random thoughts, and stories.
+        I love discovering new things and
+        collecting beautiful memories.
+      </p>
+      <p>
+        This website is my little corner of the
+        internet. Here, I can express myself
+        and share a little piece of who I am.
+      </p>
+      <p>
+        <b>Name:</b> [Talita Aghnia Ulfia]<br>
+        <b>Nickname:</b> [Lita, Faya, Ghina]<br>
+        <b>Birthday:</b> [17 Februari 2010]<br>
+        <b>Hobbies:</b> [Bermain gitar, Mendengarkan musik, Melalukan hal random]
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONALITY -->
+<section>
+  <div class="section-title">
+    <small>MY LITTLE PERSONALITY</small>
+    <h2>That's So Me!</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">☁️</div>
+      <h3>My Personality</h3>
+      <p>[Aku adalah orang yang tenang tetapi memiliki rasa ingin tahu yang tinggi. Aku suka musik, imajinasi, hal-hal kreatif, dan mempelajari sesuatu yang baru.
+         Mskipun terkadang aku sedikit pemalu dan malas, aku memliki banyak impian dan ide yang ingin kuwujudkan]</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🎸🎧</div>
+      <h3>My Hobbies</h3>
+      <p>[Aku suka sekali dengan musik, maka dari itu aku juga gemar bermain gitar.
+         Sesekali aku menggambar untuk mengisi waktu luang, serta membaca manhwa]</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌙</div>
+      <h3>My Little Things</h3>
+      <p>[✧Menikmati indahnya langit sore 
+          ✧Memandangi bulan dan bintang
+          ✧Menonton anime favorit
+          ✧Mengabadikan kenangan kecil
+          ✧Melamun tentang masa depan]</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAVORITES -->
+<section class="favorites" id="favorites">
+  <div class="section-title">
+    <small>THINGS I LOVE</small>
+    <h2>My Favorites ♡</h2>
+  </div>
+
+  <div class="cards">
+    <div class="favorite-item">
+      <span>🎨</span>
+      <h3>Favorite Color</h3>
+      <p>[Sky Blue, Violet, Black]</p>
+    </div>
+
+    <div class="favorite-item">
+      <span>🍓</span>
+      <h3>Favorite Food</h3>
+      <p>[hidangan seafood,terutama cumi]</p>
+    </div>
+
+    <div class="favorite-item">
+      <span>🎧</span>
+      <h3>Favorite Song</h3>
+      <p>[Harvey-Her's, with ease-Joon]</p>
+    </div>
+
+    <div class="favorite-item">
+      <span>🎬</span>
+      <h3>Favorite Movie</h3>
+      <p>[Harry Potter, Boboiboy]</p>
+    </div>
+
+    <div class="favorite-item">
+      <span>🌷</span>
+      <h3>Favorite Flower</h3>
+      <p>[Lily of the valley and Snowdrop]</p>
+    </div>
+
+    <div class="favorite-item">
+      <span>🐱 🐹 🐟</span>
+      <h3>Favorite Animal</h3>
+      <p>[Cat, Fish, Hamster]</p>
+    </div>
+  </div>
+</section>
+
+<!-- DREAMS -->
+<section class="dreams" id="dreams">
+  <small>MY FUTURE STORY</small>
+  <h2>My Little Dreams ✨</h2>
+  <p>
+    I have so many dreams waiting to come true.
+    I want to grow, learn new things, explore the
+    world, and create a life filled with beautiful
+    memories.
+  </p>
+  <p>
+    <b>[Aku ingin melanjutkan pendidikan, merasakan pengalaman kuliah di Jepang,
+         Lancar berbahasa Jepang dan Inggris, serta menjadi ahli di bidang teknologi.
+         Aku juga ingin menciptakan karya digital dari ide-ideku sendiri, mengunjungi berbagai tempat baru,
+         dan tentunya membanggakan orang tua.
+         
+         one day, all little dreams will come true.]</b>
+  </p>
+  <span style="font-size:35px">🌙 🦢 🌸</span>
+</section>
+
+<!-- QUOTE -->
+<div class="quote">
+  <h2>"There is only one me, and that's my magic."</h2>
+  <p>Made with love, just for myself ♡</p>
+</div>
+
+<footer>
+  © 2026 JustMe — A little world of [Faya] ♡
+</footer>
+
+
+
+</body></html>
